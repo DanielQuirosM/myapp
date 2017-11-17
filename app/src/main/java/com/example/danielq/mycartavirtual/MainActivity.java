@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnMap.setOnClickListener(this);
         Button btnMenu = (Button) findViewById(R.id.ButtonCarta);
         btnMenu.setOnClickListener(this);
+        Button btnRes= (Button) findViewById(R.id.ButtonReserva);
+        btnRes.setOnClickListener(this);
     }
     public void lanzarActivity (int idView) {
         Intent i ;
@@ -28,6 +30,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.ButtonCarta:
                 i = new Intent(this, MenuActivity.class);
+                startActivity(i);
+                break;
+            case R.id.ButtonReserva:
+                i = new Intent(this, MesasActivity.class);
                 startActivity(i);
                 break;
         }

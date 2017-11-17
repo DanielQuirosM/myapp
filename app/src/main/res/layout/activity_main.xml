@@ -10,22 +10,22 @@
     tools:context="com.example.danielq.mycartavirtual.MainActivity">
 
     <Button
+        android:id="@+id/buttonMyMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ver ubicación"
-        android:id="@+id/buttonMyMap"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@+id/ButtonCarta"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#ff2c2c"
         android:breakStrategy="high_quality"
         android:clickable="false"
         android:contextClickable="false"
         android:drawableTint="#ffffff"
         android:elegantTextHeight="false"
         android:foregroundTint="#ffffff"
-        android:backgroundTint="#ff2c2c"
-        android:layout_alignWithParentIfMissing="false"
-        android:textSize="20dp"
+        android:text="Ver ubicación"
         android:textColor="#ffffff"
-        android:layout_below="@+id/ButtonCarta"
-        android:layout_centerHorizontal="true" />
+        android:textSize="20dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -66,5 +66,17 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:layout_above="@+id/textView" />
+
+    <Button
+        android:id="@+id/ButtonReserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonMyMap"
+        android:layout_alignStart="@+id/buttonMyMap"
+        android:layout_below="@+id/buttonMyMap"
+        android:backgroundTint="#ff2c2c"
+        android:text="RESERVAR"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
 
 </RelativeLayout>

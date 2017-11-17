@@ -42,6 +42,7 @@
         </intent-filter>
         </activity>
         <activity android:name=".MenuActivity" />
+        <activity android:name=".MesasActivity" />
         <activity android:name=".EntradasActivity" />
         <activity android:name=".PlaFuerActivity" />
         <activity android:name=".PostresActivity" />
